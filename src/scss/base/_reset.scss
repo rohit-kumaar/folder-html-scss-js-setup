@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+figure,
+blockquote {
+  padding: 0;
+  margin: 0;
+  font-family: $primary-font;
+  font-weight: normal;
+}
+
+a {
+  color: $color-white;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
