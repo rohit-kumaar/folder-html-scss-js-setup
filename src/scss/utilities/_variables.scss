@@ -2,9 +2,8 @@
 $primary-font: "Montserrat", sans-serif;
 
 // color
-$color-black: #000;
-$color-white: #fff;
+$color-black: hsl(0, 0%, 0%);
+$color-white: hsl(0, 0%, 100%);
 
 // fonts path
 $fonts-path: "../../fonts" !default;
-
