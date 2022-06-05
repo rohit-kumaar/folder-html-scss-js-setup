@@ -1,25 +1,18 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var sourcemaps = require("gulp-sourcemaps");
-// var autoprefixer = require('gulp-autoprefixer');
-var csso = require("gulp-csso");
 var concat = require("gulp-concat");
 var minify = require("gulp-minify");
 var cleanCss = require("gulp-clean-css");
 
 // Development Tasks
 gulp.task("sass", function () {
-  return (
-    gulp
-      .src("src/scss/**/*.scss") // Gets all files ending with .scss in src/scss and children dirs
-      .pipe(sourcemaps.init())
-      .pipe(sass().on("error", sass.logError)) // Passes it through a gulp-sass, log errors to console
-      // .pipe(autoprefixer({
-      //   cascade: false
-      // }))
-      .pipe(sourcemaps.write())
-      .pipe(gulp.dest("src/css"))
-  ); // Outputs it in the css folder
+  return gulp
+    .src("src/scss/**/*.scss") // Gets all files ending with .scss in src/scss and children dirs
+    .pipe(sourcemaps.init())
+    .pipe(sass().on("error", sass.logError)) // Passes it through a gulp-sass, log errors to console
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest("src/css")); // Outputs it in the css folder
 });
 
 // Watchers
@@ -42,9 +35,7 @@ gulp.task("minifycss", function () {
         })
       )
       .pipe(concat("bundle.min.css"))
-      // Auto-prefix css styles for cross browser compatibility
-      // .pipe(autoprefixer())
-      // Minify the file
+
       .pipe(cleanCss())
       // Output
       .pipe(gulp.dest("src/css"))
