@@ -1,4 +1,11 @@
+// colors start
 $colors: (
+  white: (
+    900: $white-900,
+  ),
+  black: (
+    900: $black-900,
+  ),
   primary: (
     50: hsl(0, 86%, 97%),
     100: hsl(0, 93%, 94%),
@@ -19,5 +26,32 @@ $colors: (
     .bg-#{$color}-#{$shade} {
       background: $value;
     }
+
+    .text-#{$color}-#{$shade} {
+      color: $value;
+    }
   }
 }
+
+// colors end
+
+// font start
+$fonts-weights: (
+  weights: (
+    400: $fw-400,
+    500: $fw-500,
+    600: $fw-600,
+    700: $fw-700,
+    800: $fw-800,
+    900: $fw-900,
+  ),
+);
+
+@each $fonts-weight, $weights in $fonts-weights {
+  @each $weight, $value in $weights {
+    .fw-#{$value} {
+      font-weight: $value;
+    }
+  }
+}
+// font end
