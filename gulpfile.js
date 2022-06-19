@@ -1,9 +1,9 @@
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var sourcemaps = require("gulp-sourcemaps");
-var concat = require("gulp-concat");
-var minify = require("gulp-minify");
-var cleanCss = require("gulp-clean-css");
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const sourcemaps = require("gulp-sourcemaps");
+const concat = require("gulp-concat");
+const minify = require("gulp-minify");
+const cleanCss = require("gulp-clean-css");
 
 // Development Tasks
 gulp.task("sass", function () {

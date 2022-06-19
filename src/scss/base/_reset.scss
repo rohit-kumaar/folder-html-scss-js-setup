@@ -1,22 +1,23 @@
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: $fs-16;
+}
+
+body {
+  color: $black;
+  background: $white;
+  font-family: $ff-serif;
+  font-weight: $fw-400;
 }
 
 *,
 *::before,
 *::after {
+  padding: 0;
+  margin: 0;
   box-sizing: inherit;
 }
 
-* {
-  &::before,
-  &::after {
-    content: "";
-  }
-}
-
-body,
 h1,
 h2,
 h3,
@@ -30,12 +31,11 @@ figure,
 blockquote {
   padding: 0;
   margin: 0;
-  font-family: $primary-font;
-  font-weight: normal;
+  font-weight: $fw-400;
 }
 
 a {
-  color: $white-900;
+  color: $white;
   text-decoration: none;
 }
 
@@ -44,3 +44,16 @@ ul {
   list-style: none;
   cursor: pointer;
 }
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// img,
+// picture {
+//   max-width: 100%;
+//   display: block;
+// }

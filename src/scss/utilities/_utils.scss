@@ -1,11 +1,7 @@
-// colors start
+/* ------------------- */
+/* Colors Start        */
+/* ------------------- */
 $colors: (
-  white: (
-    900: $white-900,
-  ),
-  black: (
-    900: $black-900,
-  ),
   primary: (
     50: hsl(0, 86%, 97%),
     100: hsl(0, 93%, 94%),
@@ -26,16 +22,34 @@ $colors: (
     .bg-#{$color}-#{$shade} {
       background: $value;
     }
+  }
+}
 
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
     .text-#{$color}-#{$shade} {
       color: $value;
     }
   }
 }
-
 // colors end
 
-// font start
+// color start Already in bootstrap class
+// $color: (
+//   white: $white,
+//   black: $black,
+// );
+
+// @each $color, $color_name in $color {
+//   .text-#{$color} {
+//     color: $color_name;
+//   }
+// }
+// color end
+
+/* ------------------- */
+/* Font Start          */
+/* ------------------- */
 $fonts-weights: (
   weights: (
     400: $fw-400,
