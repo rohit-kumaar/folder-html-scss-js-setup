@@ -48,7 +48,7 @@ $colors: (
 // color end
 
 /* ------------------- */
-/* Font Start          */
+/* Font weights Start          */
 /* ------------------- */
 $fonts-weights: (
   weights: (
@@ -68,4 +68,24 @@ $fonts-weights: (
     }
   }
 }
-// font end
+
+/* ------------------- */
+/* Font sizes Start          */
+/* ------------------- */
+$font-sizes: (
+  fonts: (
+    "11": $fs-11,
+    "12": $fs-12,
+    "13": $fs-13,
+    "14": $fs-14,
+    "15": $fs-15,
+  ),
+);
+
+@each $fonts-size, $fonts in $font-sizes {
+  @each $font, $value in $fonts {
+    .fs-#{$font} {
+      font-size: $value;
+    }
+  }
+}

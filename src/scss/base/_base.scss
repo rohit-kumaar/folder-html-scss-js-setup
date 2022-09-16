@@ -39,21 +39,13 @@ a {
   text-decoration: none;
 }
 
-ol,
-ul {
+li {
   list-style: none;
   cursor: pointer;
 }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
-
-// img,
-// picture {
-//   max-width: 100%;
-//   display: block;
-// }

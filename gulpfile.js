@@ -46,7 +46,7 @@ gulp.task("minifycss", function () {
 gulp.task("minifyjs", function () {
   return (
     gulp
-      .src(["src/js/script.js"])
+      .src(["src/js/index.js"])
       // Minify the file
       .pipe(concat("bundle.min.js"))
       .pipe(

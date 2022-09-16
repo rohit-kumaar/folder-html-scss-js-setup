@@ -1,4 +1,9 @@
 // font size
+$fs-11: 11px;
+$fs-12: 12px;
+$fs-13: 13px;
+$fs-14: 14px;
+$fs-15: 15px;
 $fs-16: 16px;
 
 // font family
@@ -17,7 +22,10 @@ $fw-800: 800;
 $fw-900: 900;
 
 // fonts path
-$fonts-path: "../../fonts" !default;
+$fonts-path: "../fonts" !default;
 
-// // Convert px to rem
+// images path
+$images: "../images" !default;
+
+// Convert px to rem
 $scut-rem-base: 16 !default;
