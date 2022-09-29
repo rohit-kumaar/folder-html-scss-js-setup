@@ -1,4 +1,6 @@
-// font size
+/* ------------------- */
+/* Font sizes          */
+/* ------------------- */
 $fs-11: 11px;
 $fs-12: 12px;
 $fs-13: 13px;
@@ -6,14 +8,20 @@ $fs-14: 14px;
 $fs-15: 15px;
 $fs-16: 16px;
 
-// font family
+/* ------------------- */
+/* Font family         */
+/* ------------------- */
 $ff-serif: "Montserrat", sans-serif;
 
-// color
+/* ------------------- */
+/* Colors              */
+/* ------------------- */
 $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
 
-// font weight
+/* ------------------- */
+/* Font weight         */
+/* ------------------- */
 $fw-400: 400;
 $fw-500: 500;
 $fw-600: 600;
@@ -21,11 +29,18 @@ $fw-700: 700;
 $fw-800: 800;
 $fw-900: 900;
 
-// fonts path
+/* ------------------- */
+/* Font Path           */
+/* ------------------- */
 $fonts-path: "../fonts" !default;
 
-// images path
+/* ------------------- */
+/* Image Path          */
+/* ------------------- */
 $images: "../images" !default;
 
-// Convert px to rem
+/* ------------------- */
+/* Convert px to rem   */
+/* ------------------- */
 $scut-rem-base: 16 !default;
+
