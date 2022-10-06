@@ -3,5 +3,6 @@
         "medikaprocure",
         "minifycss",
         "minifyjs"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

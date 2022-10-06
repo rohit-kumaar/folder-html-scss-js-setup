@@ -1,6 +1,7 @@
 /* ------------------- */
 /* Font sizes          */
 /* ------------------- */
+$fs-10: 10px;
 $fs-11: 11px;
 $fs-12: 12px;
 $fs-13: 13px;
@@ -30,6 +31,16 @@ $fw-800: 800;
 $fw-900: 900;
 
 /* ------------------- */
+/* Z-index             */
+/* ------------------- */
+$z-index0: -1;
+$z-index1: 1;
+$z-index2: 2;
+$z-index3: 3;
+$z-index4: 4;
+$z-index5: 5;
+
+/* ------------------- */
 /* Font Path           */
 /* ------------------- */
 $fonts-path: "../fonts" !default;
@@ -37,10 +48,9 @@ $fonts-path: "../fonts" !default;
 /* ------------------- */
 /* Image Path          */
 /* ------------------- */
-$images: "../images" !default;
+$images-path: "../images" !default;
 
 /* ------------------- */
 /* Convert px to rem   */
 /* ------------------- */
 $scut-rem-base: 16 !default;
-

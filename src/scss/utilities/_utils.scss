@@ -32,20 +32,6 @@ $colors: (
     }
   }
 }
-// colors end
-
-// color start Already in bootstrap class
-// $color: (
-//   white: $white,
-//   black: $black,
-// );
-
-// @each $color, $color_name in $color {
-//   .text-#{$color} {
-//     color: $color_name;
-//   }
-// }
-// color end
 
 /* ------------------- */
 /* Font weights Start          */
@@ -74,6 +60,7 @@ $fonts-weights: (
 /* ------------------- */
 $font-sizes: (
   fonts: (
+    "10": $fs-10,
     "11": $fs-11,
     "12": $fs-12,
     "13": $fs-13,
@@ -86,6 +73,28 @@ $font-sizes: (
   @each $font, $value in $fonts {
     .fs-#{$font} {
       font-size: $value;
+    }
+  }
+}
+
+/* ------------------- */
+/* Z-index             */
+/* ------------------- */
+$z-indexes: (
+  indexes: (
+    -1: $z-index0,
+    1: $z-index1,
+    2: $z-index2,
+    3: $z-index3,
+    4: $z-index4,
+    5: $z-index5,
+  ),
+);
+
+@each $z-index, $indexes in $z-indexes {
+  @each $index, $value in $indexes {
+    .z-#{$value} {
+      z-index: $value;
     }
   }
 }
