@@ -1,6 +1,6 @@
 @charset 'utf-8';
 // Don't change the import folder links
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../scss/vendors/bootstrap/bootstrap.min.css";
 @import "utilities/__utilities-dir";
 @import "base/__base-dir";
 @import "components/__components-dir";
