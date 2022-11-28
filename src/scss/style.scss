@@ -1,6 +1,6 @@
 @charset 'utf-8';
 // Don't change the import folder links
-@import "../scss/vendors/bootstrap/bootstrap.min.css";
+@import "vendors/__vendors-dir";
 @import "utilities/__utilities-dir";
 @import "base/__base-dir";
 @import "components/__components-dir";
