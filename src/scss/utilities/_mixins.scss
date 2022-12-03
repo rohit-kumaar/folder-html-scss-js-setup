@@ -2,7 +2,6 @@
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
-
 @mixin transition($props1, $props2: _) {
   transition: $props1 1s ease-in-out, $props2 1s ease-in-out;
 }
@@ -11,3 +10,23 @@
   background: url(../images/#{$props}.#{$extension}) no-repeat center
     center/cover;
 }
+
+// Media Query Start
+@mixin mobile {
+  @include media-breakpoint-up(sm) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @include media-breakpoint-up(md) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @include media-breakpoint-up(lg) {
+    @content;
+  }
+}
+// Media Query End
