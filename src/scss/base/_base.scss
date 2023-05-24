@@ -1,11 +1,12 @@
 html {
   box-sizing: border-box;
   font-size: $fs-16;
+  color-scheme: light dark;
 }
 
 body {
   color: $black;
-  background: $white;
+  background-color: $white;
   font-family: $ff-serif;
   font-weight: $fw-400;
 }
@@ -34,18 +35,9 @@ blockquote {
   font-weight: $fw-400;
 }
 
-a {
-  color: $white;
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-  cursor: pointer;
-}
-
-img {
+img,
+picture,
+svg {
   max-width: 100%;
-  width: auto;
-  height: auto;
+  display: block;
 }
