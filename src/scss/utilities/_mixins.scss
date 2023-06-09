@@ -11,22 +11,22 @@
     center/cover;
 }
 
-// Media Query Start
-@mixin mobile {
-  @include media-breakpoint-up(sm) {
-    @content;
-  }
-}
+/* --------------------------------- */
+/* Start : If Bootstrap not install  */
+/* --------------------------------- */
+// $breakpoints-up: (
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px,
+// ) !default;
 
-@mixin tablet {
-  @include media-breakpoint-up(md) {
-    @content;
-  }
-}
-
-@mixin laptop {
-  @include media-breakpoint-up(lg) {
-    @content;
-  }
-}
-// Media Query End
+// @mixin media-breakpoint-up($size) {
+//   @media screen and (min-width: map-get($breakpoints-up, $size)) {
+//     @content;
+//   }
+// }
+/* ------------------------------- */
+/* End : If Bootstrap not install  */
+/* ------------------------------- */
