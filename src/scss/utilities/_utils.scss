@@ -20,7 +20,7 @@ $colors: (
 @each $color, $shades in $colors {
   @each $shade, $value in $shades {
     .bg-#{$color}-#{$shade} {
-      background: $value;
+      background-color: $value;
     }
   }
 }
@@ -34,7 +34,7 @@ $colors: (
 }
 
 /* ------------------- */
-/* Font weights Start          */
+/* Font weights Start  */
 /* ------------------- */
 $fonts-weights: (
   weights: (
@@ -56,7 +56,7 @@ $fonts-weights: (
 }
 
 /* ------------------- */
-/* Font sizes Start          */
+/* Font sizes Start    */
 /* ------------------- */
 $font-sizes: (
   fonts: (
