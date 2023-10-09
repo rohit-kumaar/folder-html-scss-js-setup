@@ -9,15 +9,19 @@
 //   border: 1px solid red;
 // }
 
-// .container {
-//   width: min(1200px, 100%);
-//   padding-inline: 15px;
-//   margin-inline: auto;
-// }
+.container {
+  width: min(1230px, 100%);
+  padding-inline: 15px;
+  margin-inline: auto;
+}
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: 200px;
   gap: 20px;
+}
+
+.wrapper {
+  // border: 1px solid red;
 }
