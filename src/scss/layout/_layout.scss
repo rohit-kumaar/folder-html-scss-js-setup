@@ -5,23 +5,36 @@
 //   margin-inline: auto;
 // }
 
-// .container {
-//   border: 1px solid red;
-// }
-
 .container {
-  width: min(1230px, 100%);
+  width: min(100%, 1230px);
   padding-inline: 15px;
   margin-inline: auto;
 }
 
 .grid-container {
+  --width: 1200px;
+  --padding-inline: 15px;
+
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(var(--padding-inline), 1fr)
+    [container-start]
+    min(100% - (var(--padding-inline) * 2), var(--width))
+    [container-end]
+    minmax(var(--padding-inline), 1fr) [full-width-end];
+
+  > * {
+    grid-column: container;
+  }
+
+  > .full-width {
+    grid-column: full-width;
+  }
+}
+
+.grid-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-auto-rows: 200px;
   gap: 20px;
-}
-
-.wrapper {
-  // border: 1px solid red;
 }
