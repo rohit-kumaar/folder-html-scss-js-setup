@@ -6,22 +6,23 @@
 // }
 
 .container {
-  width: min(100%, 1230px);
-  padding-inline: 15px;
+  --px: calc(15px * 2);
+
+  width: min(100% - var(--px), 1230px);
   margin-inline: auto;
 }
 
 .grid-container {
   --width: 1200px;
-  --padding-inline: 15px;
+  --px: 15px;
 
   display: grid;
   grid-template-columns:
-    [full-width-start] minmax(var(--padding-inline), 1fr)
+    [full-width-start] minmax(var(--px), 1fr)
     [container-start]
-    min(100% - (var(--padding-inline) * 2), var(--width))
+    min(100% - (var(--px) * 2), var(--width))
     [container-end]
-    minmax(var(--padding-inline), 1fr) [full-width-end];
+    minmax(var(--px), 1fr) [full-width-end];
 
   > * {
     grid-column: container;
