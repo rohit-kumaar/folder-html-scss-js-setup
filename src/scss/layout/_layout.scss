@@ -6,9 +6,12 @@
 // }
 
 .container {
+  --content: 1200px;
+  --mw: 100%;
   --px: calc(15px * 2);
 
-  width: min(100% - var(--px), 1230px);
+  width: min(var(--mw) - var(--px), var(--content));
+  padding-inline: 0 !important; // if bootstrap install
   margin-inline: auto;
 }
 
