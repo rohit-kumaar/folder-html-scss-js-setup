@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp watch"
+    "start": "gulp watch",
+    "gulp-minifycss": "gulp minifycss",
+    "gulp-minifyjs": "gulp minifyjs",
+    "build": "concurrently \"npm run gulp-minifycss\" \"npm run gulp-minifyjs\""
   },
   "keywords": [],
   "author": "",
