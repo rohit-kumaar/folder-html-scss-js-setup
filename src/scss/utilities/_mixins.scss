@@ -7,8 +7,7 @@
 }
 
 @mixin backgroundImage($props, $extension) {
-  background: url(../images/#{$props}.#{$extension}) no-repeat center
-    center/cover;
+  background: url(../images/#{$props}.#{$extension}) no-repeat center center/cover;
 }
 
 /* --------------------------------- */
@@ -30,3 +29,21 @@
 /* ------------------------------- */
 /* End : If Bootstrap not install  */
 /* ------------------------------- */
+
+/* -------------------------- */
+/* Start : Generate Font Size */
+/* -------------------------- */
+// https://utopia.fyi/type/calculator/
+
+$screen-min-width: 320;
+$screen-max-width: 1440;
+$screen-vw: 100vw;
+$fluid-bp: calc(($screen-vw - $screen-min-width / 16 * 1rem) / ($screen-max-width - $screen-min-width));
+
+@mixin fs($fs-min, $fs-max) {
+  font-size: calc((($fs-min / 16) * 1rem) + ($fs-max - $fs-min) * $fluid-bp);
+}
+
+/* ------------------------ */
+/* End : Generate Font Size */
+/* ------------------------ */
